@@ -3,4 +3,11 @@ repos:
     rev: 2.1.2
     hooks:
       - id: prettier
-        args: [--single-quote=true]
+        args:
+          [
+            --single-quote=true,
+            --trailing-comma=none,
+            --no-semi,
+            --print-width=80,
+            --tab-width=2,
+          ]
