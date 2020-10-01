@@ -7,3 +7,5 @@ https://docs.google.com/spreadsheets/d/1xrIs2F6WUyFg1J-00ZY71nmel4YYpctyT1Cks4HI
 https://github.com/ConsenSys/ethereum-developer-tools-list
 
 https://eattheblocks.com/how-to-optimize-gas-cost-in-a-solidity-smart-contract-6-tips/#tip2
+
+https://www.tutorialspoint.com/solidity/solidity_fallback_function.htm
