@@ -3,6 +3,8 @@
 // Need to add a rec. function not just fallback()
 
 pragma solidity >=0.7.0 <0.8.0;
+// pragma experimental ABIEncoderV2;
+// pragma experimental SMTChecker;
 
 contract ERC20Token{  // in order to talk to this smart contract we need to know the address
   string public name;
