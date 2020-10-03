@@ -117,3 +117,7 @@ dist
 
 # additional
 flash.sol
+
+#compiled
+/build
+/bin
