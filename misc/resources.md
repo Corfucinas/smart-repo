@@ -11,3 +11,23 @@ https://eattheblocks.com/how-to-optimize-gas-cost-in-a-solidity-smart-contract-6
 https://www.tutorialspoint.com/solidity/solidity_fallback_function.htm
 
 https://ethfiddle.com/recent_fiddles
+
+https://www.tutorialspoint.com/solidity/index.htm
+
+https://github.com/Arachnid/solidity-stringutils
+
+https://github.com/OpenZeppelin/openzeppelin-contracts
+
+https://docs.openzeppelin.com/contracts/3.x/
+
+https://medium.com/coinmonks/all-you-should-know-about-libraries-in-solidity-dd8bc953eae7
+
+https://medium.com/@jeancvllr/solidity-tutorial-all-about-libraries-762e5a3692f9
+
+https://github.com/bkrem/awesome-solidity
+
+https://github.com/alianse777/solidity-standard-library
+
+https://github.com/ethereum/wiki/wiki/Solidity-Collections
+
+https://medium.com/coinmonks/how-to-generate-random-numbers-on-ethereum-using-vrf-8250839dd9e2
