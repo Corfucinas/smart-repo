@@ -117,6 +117,7 @@ dist
 
 # additional
 flash.sol
+flash.txt
 
 #compiled
 /build
