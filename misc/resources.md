@@ -31,3 +31,5 @@ https://github.com/alianse777/solidity-standard-library
 https://github.com/ethereum/wiki/wiki/Solidity-Collections
 
 https://medium.com/coinmonks/how-to-generate-random-numbers-on-ethereum-using-vrf-8250839dd9e2
+
+https://studydefi.com/npm-install-money-legos/
