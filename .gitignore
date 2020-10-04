@@ -118,6 +118,7 @@ dist
 # additional
 flash.sol
 flash.txt
+foward-eth
 
 #compiled
 /build
