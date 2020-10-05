@@ -33,3 +33,7 @@ https://github.com/ethereum/wiki/wiki/Solidity-Collections
 https://medium.com/coinmonks/how-to-generate-random-numbers-on-ethereum-using-vrf-8250839dd9e2
 
 https://studydefi.com/npm-install-money-legos/
+
+ToDoList.deployed().then((\_todo) => todo = \_todo);
+
+https://medium.com/coinmonks/is-vyper-a-good-alternative-to-solidity-ac89c33a1d43
