@@ -37,3 +37,9 @@ https://studydefi.com/npm-install-money-legos/
 ToDoList.deployed().then((\_todo) => todo = \_todo);
 
 https://medium.com/coinmonks/is-vyper-a-good-alternative-to-solidity-ac89c33a1d43
+
+https://medium.com/@samajammin/how-to-interact-with-ethereums-mainnet-in-a-development-environment-with-ganache-3d8649df0876
+
+https://medium.com/nomic-labs-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357
+
+https://github.com/albertocuestacanada/ERC20Permit
