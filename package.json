@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lintcss": "./node_modules/.bin/stylelint **/*.css --fix",
     "start": "static-server ./contracts/examples/tutorials/eattheblocks/day1-simple-smart-contract/frontend/public",
-    "hello world": "static-server ./contracts/examples/tutorials/eattheblocks/day2-hello-world/frontend/public"
+    "hello-world": "static-server ./contracts/examples/tutorials/eattheblocks/day2-hello-world/frontend/public"
   },
   "repository": "https://github.com/Corfucinas/smart-repo",
   "author": "Pedro Torres <corfucinas@protonmail.com>",
@@ -16,6 +16,8 @@
     "@codechecks/client": "^0.1.10",
     "@openzeppelin/contracts": "^3.2.0",
     "@studydefi/money-legos": "^2.4.1",
+    "@truffle/hdwallet-provider": "^1.1.0",
+    "axios": "^0.20.0",
     "custom-env": "^2.0.1",
     "embark": "^6.0.0",
     "eth-gas-reporter": "^0.2.17",
