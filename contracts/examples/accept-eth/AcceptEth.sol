@@ -2,7 +2,7 @@
 
 // Need to add a rec. function not just fallback()
 
-pragma solidity = 0.7.2;
+pragma solidity = 0.7.3;
 // pragma experimental ABIEncoderV2;
 // pragma experimental SMTChecker;
 
