@@ -1,6 +1,6 @@
-const HelloWorld = artifacts.require('HelloWorld')
+const HelloWorldWeb = artifacts.require('HelloWorldWeb')
 
-contract('HelloWorld', () => {
+contract('HelloWorldWeb', () => {
   it('should return Hello World', async () => {
     const helloWorld = await HelloWorld.deployed()
     const result = await helloWorld.hello()

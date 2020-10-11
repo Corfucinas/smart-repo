@@ -2,7 +2,7 @@
 
 pragma solidity =0.7.3;
 
-contract HelloWorld {
+contract HelloWorldWeb {
   function hello() pure public returns(string memory) {
     return "Hello World";
   }
