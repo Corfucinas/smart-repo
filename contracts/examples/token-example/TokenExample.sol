@@ -2,13 +2,13 @@
 
 // Need to add a rec. function not just fallback()
 
-pragma solidity = 0.7.3;
+pragma solidity =0.7.3;
 // pragma experimental ABIEncoderV2;
 // pragma experimental SMTChecker;
 
 contract ERC20TokenExample {
     // in order to talk to this smart contract we need to know the address
-    string public name;
+    string internal name;
     mapping(address => uint256) public balances;
 
     constructor(string memory _name) {
@@ -18,7 +18,7 @@ contract ERC20TokenExample {
     function mint() public virtual {
         // balances[msg.sender] ++; // internal calling, msg.sender is the address of the contract,
         //not who sent the transaction
-        balances[tx.origin]++; // sender of the transaction
+        balances[msg.sender]++; // sender of the transaction
     }
 
 }

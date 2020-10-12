@@ -2,7 +2,7 @@
 
 // Need to add a rec. function not just fallback()
 
-pragma solidity = 0.7.3;
+pragma solidity =0.7.3;
 // pragma experimental ABIEncoderV2;
 // pragma experimental SMTChecker;
 
@@ -11,15 +11,15 @@ contract ERC20Token {
     string public name;
     mapping(address => uint256) public balances;
 
-    function mint() public {
+    function mint() external {
         // balances[msg.sender] ++; // internal calling, msg.sender is the address of the contract,
         //not who sent the transaction
-        balances[tx.origin]++; // sender of the transaction
+        balances[msg.sender]++; // sender of the transaction, use this and not tx.origin
     }
 }
 
 contract AcceptEth {
-    address payable wallet; // need to be declared
+    address payable internal wallet; // need to be declared
     address public token;
     // event Purchase(
     //   address _buyer,
