@@ -3,7 +3,7 @@
 pragma solidity =0.7.3;
 
 contract ToDoList {
-    string[] internal tasks;
+    string[] private tasks;
 
     event Info(string _event);
 
@@ -13,11 +13,11 @@ contract ToDoList {
     }
 
     //Add a tasks (will create a transaction)
-    function addTask(string memory _task) external {
+    function addTask(string calldata _task) external {
         tasks.push(_task);
     }
 
-    function triggerEvent(string memory _description) external {
+    function triggerEvent(string calldata _description) external {
         emit Info(_description);
     }
 }
