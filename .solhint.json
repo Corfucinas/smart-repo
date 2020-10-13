@@ -30,9 +30,7 @@
         "maxLength": 32
       }
     ],
-    "func-order": "error",
     "ordering": "error",
-    "mark-callable-contracts": "error",
     "code-complexity": [
       "error",
       7
