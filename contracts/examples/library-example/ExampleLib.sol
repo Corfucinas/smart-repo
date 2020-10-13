@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity = 0.7.3;
+pragma solidity =0.7.3;
+
 // pragma experimental ABIEncoderV2;
 // pragma experimental SMTChecker;
 
@@ -11,5 +12,4 @@ library ExampleLib {
         uint256 c = a / b;
         return c;
     }
-
 }

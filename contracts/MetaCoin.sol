@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity = 0.7.3;
+pragma solidity =0.7.3;
 
-import "./ConvertLib.sol";
+import './ConvertLib.sol';
 
 // This is just a simple example of a coin-like contract.
 // It is not standards compatible and cannot be expected to talk to other
@@ -10,7 +10,7 @@ import "./ConvertLib.sol";
 // token, see: https://github.com/ConsenSys/Tokens. Cheers!
 
 contract MetaCoin {
-    mapping(address => uint) balances;
+    mapping(address => uint256) balances;
 
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
@@ -18,7 +18,7 @@ contract MetaCoin {
         balances[tx.origin] = 10000;
     }
 
-    function sendCoin(address receiver, uint amount)
+    function sendCoin(address receiver, uint256 amount)
         public
         returns (bool sufficient)
     {
@@ -29,11 +29,11 @@ contract MetaCoin {
         return true;
     }
 
-    function getBalanceInEth(address addr) public view returns (uint) {
+    function getBalanceInEth(address addr) public view returns (uint256) {
         return ConvertLib.convert(getBalance(addr), 2);
     }
 
-    function getBalance(address addr) public view returns (uint) {
+    function getBalance(address addr) public view returns (uint256) {
         return balances[addr];
     }
 }

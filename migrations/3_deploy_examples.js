@@ -4,8 +4,8 @@ const IMPORTEXAMPLE = artifacts.require('Import')
 const TOKEN = artifacts.require('MyToken')
 const TODOLIST = artifacts.require('ToDoList')
 const TOKENNAME = {
-  name: 'Pedro Magic Coin',
-  symbol: 'PMC'
+  name: 'Magic Coin',
+  symbol: 'MC'
 }
 
 module.exports = function (deployer) {

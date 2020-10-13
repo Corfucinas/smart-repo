@@ -1,87 +1,87 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity = 0.7.3;
+pragma solidity =0.7.3;
 
 /**
-*    Note:
-*    double_t(1, 5) will be 1.05
-*    but
-*    double_t(1, 50) will be 1.5
-*
-*    example:
-*       import "multiprecision.sol";
-*       contract Test is Double
-*       {
-*           function test() internal
-*           {
-*               double memory a = double_t(1, 20); // 1.20
-*               double memory b = double_t(0, 2); // 0.02
-*               double memory result = double_add(a, b); // 1.22
-*
-*               a = double_t(2, 0); // 2.00
-*               b = double_t(1, 0); // 1.00
-*               a.sign = true; // -2.00
-*               result = double_add(a, b); // -2.00 + 1.00 = -1.00
-*
-*               result = double_sub(a, b); // -2.00 - 1.00 = -3.00
-*               result = double_mult(a, b); // -2.00 * 1.00 = -2.00
-*               result = double_div(a, b); // -2.00 / 1.00 = -2.00
-*
-*               dscale = 3; // change precision (.00 -> .000)
-*               double_t(1, 5); // now 1.005
-*               double_t(1, 50); // now 1.050
-*               double_t(1, 500); // now 1.500
-*           }
-*       }
-*/
+ *    Note:
+ *    double_t(1, 5) will be 1.05
+ *    but
+ *    double_t(1, 50) will be 1.5
+ *
+ *    example:
+ *       import "multiprecision.sol";
+ *       contract Test is Double
+ *       {
+ *           function test() internal
+ *           {
+ *               double memory a = double_t(1, 20); // 1.20
+ *               double memory b = double_t(0, 2); // 0.02
+ *               double memory result = double_add(a, b); // 1.22
+ *
+ *               a = double_t(2, 0); // 2.00
+ *               b = double_t(1, 0); // 1.00
+ *               a.sign = true; // -2.00
+ *               result = double_add(a, b); // -2.00 + 1.00 = -1.00
+ *
+ *               result = double_sub(a, b); // -2.00 - 1.00 = -3.00
+ *               result = double_mult(a, b); // -2.00 * 1.00 = -2.00
+ *               result = double_div(a, b); // -2.00 / 1.00 = -2.00
+ *
+ *               dscale = 3; // change precision (.00 -> .000)
+ *               double_t(1, 5); // now 1.005
+ *               double_t(1, 50); // now 1.050
+ *               double_t(1, 500); // now 1.500
+ *           }
+ *       }
+ */
 
 contract Double {
-    uint private dscale = 2; // precision
-    uint private dot = 10 ** dscale;
+    uint256 private dscale = 2; // precision
+    uint256 private dot = 10**dscale;
     struct double {
-        uint part;
-        uint f;
+        uint256 part;
+        uint256 f;
         bool sign;
     }
 
-    function setPrecision(uint prec) internal {
+    function setPrecision(uint256 prec) internal {
         dscale = prec;
-        dot = 10 ** dscale;
+        dot = 10**dscale;
     }
 
     /**
-    * @dev Creates new double instanse a.b
-    * @param integral fractional
-    */
-    function double_t(int integral, uint fractional)
+     * @dev Creates new double instanse a.b
+     * @param integral fractional
+     */
+    function double_t(int256 integral, uint256 fractional)
         internal
         pure
         returns (double memory data)
     {
         if (integral < 0) {
             data.sign = true;
-            data.part = uint(-integral);
+            data.part = uint256(-integral);
         } else {
-            data.part = uint(integral);
+            data.part = uint256(integral);
         }
         data.f = fractional;
     }
 
-    function convert(double memory data) internal view returns (uint r) {
+    function convert(double memory data) internal view returns (uint256 r) {
         uint256 integer = data.part * dot;
         assert(integer / data.part == dot);
         r = integer + data.f;
         assert(r - data.f == integer);
     }
 
-    function normalize(uint num, uint exp, bool sign)
-        internal
-        view
-        returns (double memory data)
-    {
-        uint d = 10 ** exp;
-        uint part = num / d;
-        uint f = num % d;
+    function normalize(
+        uint256 num,
+        uint256 exp,
+        bool sign
+    ) internal view returns (double memory data) {
+        uint256 d = 10**exp;
+        uint256 part = num / d;
+        uint256 f = num % d;
         if (f % dot == 0) {
             f /= dot;
         }
@@ -102,17 +102,17 @@ contract Double {
     */
 
     /**
-    * @dev Sum two doubles
-    * @param lhs rhs
-    * @return lhs + rhs
-    */
+     * @dev Sum two doubles
+     * @param lhs rhs
+     * @return lhs + rhs
+     */
     function double_add(double memory lhs, double memory rhs)
         internal
         view
         returns (double memory)
     {
-        uint l = convert(lhs);
-        uint r = convert(rhs);
+        uint256 l = convert(lhs);
+        uint256 r = convert(rhs);
         if (lhs.sign == rhs.sign) {
             return normalize(l + r, 2, rhs.sign);
         } else {
@@ -133,8 +133,8 @@ contract Double {
         view
         returns (double memory)
     {
-        uint l = convert(lhs);
-        uint r = convert(rhs);
+        uint256 l = convert(lhs);
+        uint256 r = convert(rhs);
         if (l > r) {
             if (lhs.sign != rhs.sign) {
                 return normalize(l + r, 2, lhs.sign);
@@ -165,8 +165,8 @@ contract Double {
         view
         returns (double memory)
     {
-        uint l = convert(lhs);
-        uint r = convert(rhs);
+        uint256 l = convert(lhs);
+        uint256 r = convert(rhs);
         return normalize(l * r, 4, xor(lhs.sign, rhs.sign));
     }
 
@@ -179,9 +179,9 @@ contract Double {
         view
         returns (double memory)
     {
-        uint l = convert(lhs);
-        uint r = convert(rhs);
-        return normalize(l * (10 ** dscale) / r, 2, xor(lhs.sign, rhs.sign));
+        uint256 l = convert(lhs);
+        uint256 r = convert(rhs);
+        return normalize((l * (10**dscale)) / r, 2, xor(lhs.sign, rhs.sign));
     }
 
     /*
@@ -217,9 +217,9 @@ contract Double {
         pure
         returns (bool)
     {
-        return (
-            lhs.part == rhs.part && lhs.f == rhs.f && rhs.sign == lhs.sign
-        );
+        return (lhs.part == rhs.part &&
+            lhs.f == rhs.f &&
+            rhs.sign == lhs.sign);
     }
 
     function double_ge(double memory lhs, double memory rhs)
@@ -228,7 +228,6 @@ contract Double {
         returns (bool)
     {
         return (double_eq(lhs, rhs) || double_gt(lhs, rhs));
-
     }
 
     function double_gt(double memory lhs, double memory rhs)
@@ -245,23 +244,22 @@ contract Double {
             return lhs.f > rhs.f;
         }
         return lhs.part > rhs.part;
-
     }
 
     /*
     // Conversation API
     */
 
-    function double_from_array(int[] memory data)
+    function double_from_array(int256[] memory data)
         internal
         pure
         returns (double[] memory)
     {
-        uint r_index = 0;
+        uint256 r_index = 0;
         double[] memory result = new double[](data.length / 2);
-        for (uint i = 0; i < data.length - 1; i += 2) {
-            result[r_index].part = uint(data[i]);
-            result[r_index].f = uint(data[i + 1]);
+        for (uint256 i = 0; i < data.length - 1; i += 2) {
+            result[r_index].part = uint256(data[i]);
+            result[r_index].f = uint256(data[i + 1]);
             r_index++;
         }
         return result;
@@ -270,26 +268,26 @@ contract Double {
     function double_to_array(double[] memory data)
         internal
         pure
-        returns (int[] memory)
+        returns (int256[] memory)
     {
-        uint index = 0;
-        int[] memory result = new int[](data.length * 2);
-        for (uint i = 0; i < data.length; i++) {
-            if (data[i].sign) result[index] = -int(data[i].part);
-            else result[index] = int(data[i].part);
-            result[index + 1] = int(data[i].f);
+        uint256 index = 0;
+        int256[] memory result = new int256[](data.length * 2);
+        for (uint256 i = 0; i < data.length; i++) {
+            if (data[i].sign) result[index] = -int256(data[i].part);
+            else result[index] = int256(data[i].part);
+            result[index + 1] = int256(data[i].f);
             index += 2;
         }
         return result;
     }
 
-    function reshape_int(int[2] memory data)
+    function reshape_int(int256[2] memory data)
         internal
         pure
         returns (double[] memory)
     {
         double[] memory res = new double[](data.length);
-        for (uint i; i < data.length; i++) {
+        for (uint256 i; i < data.length; i++) {
             res[i] = double_t(data[i], 0);
         }
         return res;

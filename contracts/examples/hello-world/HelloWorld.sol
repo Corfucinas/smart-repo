@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity = 0.7.3;
+pragma solidity =0.7.3;
+
 // pragma experimental ABIEncoderV2;
 // pragma experimental SMTChecker;
 
@@ -10,12 +11,12 @@ contract HelloWorld {
     string public value; // public allows exposing the variable to functions
     // outside the program itself
     // this way we can avoid writing a function (ie 'function get()')
-    string public default_value = "default_value";
-    string public constant constant_function = "cannot_be_changed";
+    string public default_value = 'default_value';
+    string public constant constant_function = 'cannot_be_changed';
     bool public a_bool = true;
     bool public b_bool = false;
-    int public one_int = -1;
-    uint public another_int = 1;
+    int256 public one_int = -1;
+    uint256 public another_int = 1;
     uint8 public small_number = 8;
     uint256 public bigger_number = 256;
     // Person[] public people; // Person acts like a class, people is an instance of an array.
@@ -23,19 +24,19 @@ contract HelloWorld {
     address owner; //address of who owns the contract
     uint256 opening_time = 1601567416; // time in Solidity is in seconds and start on Epoch
 
-    mapping(uint => Person) public people; // Mapping instead of using People[]
+    mapping(uint256 => Person) public people; // Mapping instead of using People[]
 
-    enum State {Waiting, Ready, Active}
+    enum State { Waiting, Ready, Active }
     State public state; // this is a getter, assigns the enum to state
 
     constructor() {
-        value = "Hello World!";
+        value = 'Hello World!';
         state = State.Waiting; // this is the default value of 'state'
         owner = msg.sender;
     }
 
     struct Person {
-        uint _id;
+        uint256 _id;
         string _first_name;
         string _last_name;
     }
@@ -83,5 +84,4 @@ contract HelloWorld {
     function set(string memory _value) public {
         value = _value;
     }
-
 }
