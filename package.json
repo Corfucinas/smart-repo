@@ -42,6 +42,8 @@
     "lint-staged": "^10.4.0",
     "pre-commit": "^1.2.2",
     "prettier": "^2.1.2",
+    "prettier-plugin-solidity": "^1.0.0-alpha.59",
+    "solhint-plugin-prettier": "^0.0.5",
     "solidity-docgen": "^0.5.7",
     "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0"
