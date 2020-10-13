@@ -13,15 +13,9 @@
     "avoid-throw": "error",
     "avoid-suicide": "error",
     "avoid-sha3": "error",
-    "compiler-version": [
-      "error",
-      "0.7.3"
-    ],
+    "compiler-version": ["error", "0.7.3"],
     "no-empty-blocks": "error",
-    "max-states-count": [
-      "error",
-      15
-    ],
+    "max-states-count": ["error", 15],
     "no-unused-vars": "error",
     "payable-fallback": "error",
     "reason-string": [
@@ -31,9 +25,7 @@
       }
     ],
     "ordering": "error",
-    "code-complexity": [
-      "error",
-      7
-    ]
+    "code-complexity": ["error", 7],
+    "quotes": ["off", "double"]
   }
 }
