@@ -1,0 +1,41 @@
+{
+  "extends": "solhint:recommended",
+  "plugins": [],
+  "rules": {
+    "func-param-name-mixedcase": "warn",
+    "modifier-name-mixedcase": "warn",
+    "private-vars-leading-underscore": [
+      "warn",
+      {
+        "strict": false
+      }
+    ],
+    "avoid-throw": "error",
+    "avoid-suicide": "error",
+    "avoid-sha3": "error",
+    "compiler-version": [
+      "error",
+      "0.7.3"
+    ],
+    "no-empty-blocks": "error",
+    "max-states-count": [
+      "error",
+      15
+    ],
+    "no-unused-vars": "error",
+    "payable-fallback": "error",
+    "reason-string": [
+      "error",
+      {
+        "maxLength": 32
+      }
+    ],
+    "func-order": "error",
+    "ordering": "error",
+    "mark-callable-contracts": "error",
+    "code-complexity": [
+      "error",
+      7
+    ]
+  }
+}
