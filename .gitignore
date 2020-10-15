@@ -119,6 +119,8 @@ dist
 flash.sol
 flash.txt
 foward-eth
+/src/project-1
+/src/project-2
 
 #compiled
 /build
