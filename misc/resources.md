@@ -73,3 +73,7 @@ https://github.com/sec-bit/awesome-buggy-erc20-tokens
 https://securify.chainsecurity.com/
 
 https://github.com/ConsenSys/smart-contract-best-practices
+
+https://academy.binance.com/en/articles/an-introduction-to-erc-20-tokens
+
+https://github.com/ethereum/web3.py
