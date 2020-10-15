@@ -31,6 +31,9 @@
   "dependencies": {
     "@biconomy/mexa": "^1.5.13",
     "@codechecks/client": "^0.1.10",
+    "@drizzle/react-components": "^1.5.3",
+    "@drizzle/react-plugin": "^1.5.3",
+    "@drizzle/store": "^1.5.3",
     "@openzeppelin/contracts": "^3.2.0",
     "@studydefi/money-legos": "^2.4.1",
     "@truffle/hdwallet-provider": "^1.1.0",
