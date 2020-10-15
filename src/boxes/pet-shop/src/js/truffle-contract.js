@@ -1057,7 +1057,6 @@
             }
 
             networks[network_name] = {}
-
             ;['address', 'events', 'links', 'updated_at'].forEach(function (
               key
             ) {
