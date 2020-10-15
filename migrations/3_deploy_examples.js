@@ -7,6 +7,7 @@ const TOKENNAME = {
   name: 'Magic Coin',
   symbol: 'MC'
 }
+const SimpleStorage = artifacts.require('./SimpleStorage.sol')
 
 module.exports = function (deployer) {
   // deployer.deploy(AcceptEth)
@@ -14,4 +15,5 @@ module.exports = function (deployer) {
   deployer.deploy(IMPORTEXAMPLE)
   deployer.deploy(TODOLIST)
   deployer.deploy(TOKEN, TOKENNAME.name, TOKENNAME.symbol)
+  deployer.deploy(SimpleStorage)
 }
