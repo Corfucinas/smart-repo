@@ -19,6 +19,7 @@
  */
 
 require('custom-env').env('LOCAL')
+const HDWalletProvider = require('@truffle/hdwallet-provider')
 
 module.exports = {
   test_file_extension_regexp: /.*\.ts$/,
@@ -42,10 +43,43 @@ module.exports = {
       host: 'localhost',
       port: 7545,
       network_id: '*', // Match any network id
-      gas: 5000000
+      gas: 5000000,
+      skipDryRun: false
       // gasPrice: 20000000000 // 20 gwei (in wei) (default: 100 gwei)
       // from: <address>,        // Account to send txs from (default: accounts[0])
     }
+
+    // ropsten: {
+    //   provider: new HDWalletProvider(
+    //     process.env.DEPLOYMENT_ACCOUNT_KEY,
+    //     'https://ropsten.infura.io/v3/' + process.env.INFURA_API_KEY
+    //   ),
+    //   network_id: 3, // Ropsten's id
+    //   gas: 5500000, // Ropsten has a lower block limit than mainnet
+    //   confirmations: 2, // # of confs to wait between deployments. (default: 0)
+    //   timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)
+    //   skipDryRun: true // Skip dry run before migrations? (default: false for public nets )
+    // },
+
+    // kovan: {
+    //   provider: new HDWalletProvider(
+    //     process.env.DEPLOYMENT_ACCOUNT_KEY,
+    //     'https://kovan.infura.io/v3/' + process.env.INFURA_API_KEY
+    //   ),
+    //   network_id: 42,
+    //   gas: 5000000,
+    //   gasPrice: 5000000000, // 5 Gwei
+    //   skipDryRun: true
+    // },
+    // mainnet: {
+    //   provider: new HDWalletProvider(
+    //     process.env.DEPLOYMENT_ACCOUNT_KEY,
+    //     'https://mainnet.infura.io/v3/' + process.env.INFURA_API_KEY
+    //   ),
+    //   network_id: 1,
+    //   gas: 5000000,
+    //   gasPrice: 5000000000 // 5 Gwei
+    // }
   },
 
   // this is necessary for coverage
@@ -56,15 +90,6 @@ module.exports = {
     gas: 0xfffffffffff,
     gasPrice: 0x01
   },
-
-  // ropsten: {
-  //   provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/YOUR-PROJECT-ID`),
-  //   network_id: 3,       // Ropsten's id
-  //   gas: 5500000,        // Ropsten has a lower block limit than mainnet
-  //   confirmations: 2,    // # of confs to wait between deployments. (default: 0)
-  //   timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
-  //   skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
-  //   },
 
   // Set default mocha options here, use special reporters etc.
   mocha: {
