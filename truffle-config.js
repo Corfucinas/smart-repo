@@ -18,6 +18,8 @@
  *
  */
 
+require('custom-env').env('LOCAL')
+
 module.exports = {
   test_file_extension_regexp: /.*\.ts$/,
   /**
@@ -70,6 +72,10 @@ module.exports = {
     reporter: 'eth-gas-reporter'
   },
 
+  etherscan: {
+    apiKey: process.env.ETHERSCAN_API
+  },
+
   plugins: ['solidity-coverage'],
 
   compilers: {
@@ -83,6 +89,7 @@ module.exports = {
       }
     }
   },
+
   ens: {
     enabled: true
   }
