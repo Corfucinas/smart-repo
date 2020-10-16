@@ -19,7 +19,9 @@
  */
 
 require('custom-env').env('LOCAL')
+
 const HDWalletProvider = require('@truffle/hdwallet-provider')
+const NonceTrackerSubprovider = require('web3-provider-engine/subproviders/nonce-tracker')
 
 module.exports = {
   test_file_extension_regexp: /.*\.ts$/,
@@ -72,10 +74,13 @@ module.exports = {
     //   skipDryRun: true
     // },
     // mainnet: {
-    //   provider: new HDWalletProvider(
-    //     process.env.DEPLOYMENT_ACCOUNT_KEY,
-    //     'https://mainnet.infura.io/v3/' + process.env.INFURA_API_KEY
-    //   ),
+    //   provider: function () {
+    //     var wallet = new HDWalletProvider(privatekey_mainnet, "https://mainnet.infura.io/v3/" + infura_v3_apikey);
+    //     var nonceTracker = new NonceTrackerSubprovider();
+    //     wallet.engine._providers.unshift(nonceTracker);
+    //     nonceTracker.setEngine(wallet.engine);
+    //     return wallet;
+    //   },
     //   network_id: 1,
     //   gas: 5000000,
     //   gasPrice: 5000000000 // 5 Gwei
@@ -101,7 +106,7 @@ module.exports = {
     apiKey: process.env.ETHERSCAN_API
   },
 
-  plugins: ['solidity-coverage'],
+  plugins: ['solidity-coverage', 'truffle-plugin-verify'],
 
   compilers: {
     solc: {
@@ -118,4 +123,8 @@ module.exports = {
   ens: {
     enabled: true
   }
+
+  // verify: {
+  //   preamble: "DNASwap Version: 1.0.0"
+  // }
 }
