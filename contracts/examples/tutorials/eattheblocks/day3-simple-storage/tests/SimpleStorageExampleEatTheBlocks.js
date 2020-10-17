@@ -1,4 +1,4 @@
-const SimpleStorageExample = artifacts.require('SimpleStorageExample')
+const SimpleStorageExample = artifacts.require('SimpleStorageExampleEatTheBlocks')
 
 contract('SimpleStorageExample', () => {
   it('should set the value of data variable in smart contract', async () => {
