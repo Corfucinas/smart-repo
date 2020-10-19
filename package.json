@@ -40,7 +40,7 @@
     "@studydefi/money-legos": "^2.4.1",
     "@truffle/hdwallet-provider": "^1.1.0",
     "axios": "^0.20.0",
-    "base-64": "^0.1.0",
+    "base-64": "^1.0.0",
     "custom-env": "^2.0.1",
     "embark": "^6.0.0",
     "eth-gas-reporter": "^0.2.17",
