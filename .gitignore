@@ -121,6 +121,7 @@ flash.txt
 foward-eth
 /src/project-1
 /src/project-2
+/src/project-3
 .env*
 
 #compiled
