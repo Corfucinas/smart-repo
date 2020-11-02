@@ -53,7 +53,7 @@
     "parasol-cli": "^2.0.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-native-randombytes": "^3.5.3",
+    "react-native-randombytes": "^3.6.0",
     "react-scripts": "^4.0.0",
     "solc": "^0.7.4",
     "static-server": "^2.2.1",
