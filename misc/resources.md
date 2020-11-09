@@ -77,3 +77,15 @@ https://github.com/ConsenSys/smart-contract-best-practices
 https://academy.binance.com/en/articles/an-introduction-to-erc-20-tokens
 
 https://github.com/ethereum/web3.py
+
+https://topmonks.github.io/solidity_quick_ref/
+
+https://ethereumdev.io/
+
+https://cryptozombies.io/
+
+https://capturetheether.com/
+
+https://github.com/shanefontaine/uniswap-python
+
+https://github.com/Uniswap/uniswap-v2-subgraph
