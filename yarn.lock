@@ -19623,10 +19623,10 @@ solhint-plugin-prettier@^0.0.5:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-solidity-docgen@^0.5.7:
-  version "0.5.7"
-  resolved "https://registry.yarnpkg.com/solidity-docgen/-/solidity-docgen-0.5.7.tgz#7c3a46ce90a863a4aff52ce080c686272dc395b2"
-  integrity sha512-eCQf4YFzk5bPAh72YAyy167x81f1eAEliTC3Am7JCDlFh4/zcuMYEVW2S/8Wz8xHI4wd3/v4lVd1F4qHxsH/1Q==
+solidity-docgen@^0.5.8:
+  version "0.5.8"
+  resolved "https://registry.yarnpkg.com/solidity-docgen/-/solidity-docgen-0.5.8.tgz#49a4002bc788a6e2f2f3cdd0692332454506c02f"
+  integrity sha512-9ci2xie0m+/wHkHCr8fwJm42xFUwJj/+vYTZMqzz4bpCjKwVE0I/jQSHUscCgNBj7dcV9ri6crgm/TI/lDPO7w==
   dependencies:
     "@oclif/command" "^1.8.0"
     "@oclif/config" "^1.17.0"
