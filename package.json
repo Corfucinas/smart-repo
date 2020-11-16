@@ -47,7 +47,7 @@
     "ethereum-waffle": "^3.2.0",
     "ethereumjs-util": "^7.0.7",
     "ganache-cli": "^6.12.1",
-    "lite-server": "^2.5.4",
+    "lite-server": "^2.6.1",
     "mocha": "^8.2.1",
     "node-libs-react-native": "^1.2.0",
     "parasol-cli": "^2.0.5",
