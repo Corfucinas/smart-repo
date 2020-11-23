@@ -19666,10 +19666,10 @@ solidity-comments-extractor@^0.0.4:
   resolved "https://registry.yarnpkg.com/solidity-comments-extractor/-/solidity-comments-extractor-0.0.4.tgz#ce420aef23641ffd0131c7d80ba85b6e1e42147e"
   integrity sha512-58glBODwXIKMaQ7rfcJOrWtFQMMOK28tJ0/LcB5Xhu7WtAxk4UX2fpgKPuaL41XjMp/y0gAa1MTLqk018wuSzA==
 
-solidity-docgen@^0.5.8:
-  version "0.5.8"
-  resolved "https://registry.yarnpkg.com/solidity-docgen/-/solidity-docgen-0.5.8.tgz#49a4002bc788a6e2f2f3cdd0692332454506c02f"
-  integrity sha512-9ci2xie0m+/wHkHCr8fwJm42xFUwJj/+vYTZMqzz4bpCjKwVE0I/jQSHUscCgNBj7dcV9ri6crgm/TI/lDPO7w==
+solidity-docgen@^0.5.9:
+  version "0.5.9"
+  resolved "https://registry.yarnpkg.com/solidity-docgen/-/solidity-docgen-0.5.9.tgz#8c889b8c8a7174c6e3141712851e32e1fd319f5b"
+  integrity sha512-6hMCMBjWGvr+2lPPRly6ezjj7/CkPhvIcQlO7UXY+5H9CHjElLDP38PWsFSEN8T0a6hTws9IaHi0+c4Pft+TnQ==
   dependencies:
     "@oclif/command" "^1.8.0"
     "@oclif/config" "^1.17.0"
