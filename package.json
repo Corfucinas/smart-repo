@@ -46,7 +46,7 @@
     "eth-gas-reporter": "^0.2.20",
     "ethereum-waffle": "^3.2.1",
     "ethereumjs-util": "^7.0.7",
-    "ganache-cli": "^6.12.1",
+    "ganache-cli": "^6.12.2",
     "lite-server": "^2.6.1",
     "mocha": "^8.2.1",
     "node-libs-react-native": "^1.2.1",
