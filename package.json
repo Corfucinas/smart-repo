@@ -48,7 +48,7 @@
     "ethereumjs-util": "^7.0.8",
     "ganache-cli": "^6.12.2",
     "lite-server": "^2.6.1",
-    "mocha": "^8.2.1",
+    "mocha": "^8.3.0",
     "node-libs-react-native": "^1.2.1",
     "parasol-cli": "^2.0.5",
     "react": "^17.0.1",
