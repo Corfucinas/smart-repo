@@ -1709,10 +1709,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@biconomy/mexa@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@biconomy/mexa/-/mexa-2.0.0.tgz#f8c1276ff860a80ade2987cc4ddcc3a8a81c76a2"
-  integrity sha512-YFoxZJ4AbgXYFvI4KQE/Xzal1gInt2868E7+LkxaX+HOI4ychJbU9GvnRYBfreNQ1kI/4TS/3KLu9wqeHDRArA==
+"@biconomy/mexa@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@biconomy/mexa/-/mexa-2.0.1.tgz#a9639618fbabbe27b4583b72ebbd54ce6bb7dc00"
+  integrity sha512-3jC79CclkpbYZ184HMXMg+uobubyp0tyoBPvxQ46RfWGBPuP7V+AWI6cEzR2PMg8Irsni/O2QtR9WlXt+uPcZA==
   dependencies:
     abi-decoder "^2.2.2"
     ethereum-tx-decoder "^3.0.0"
