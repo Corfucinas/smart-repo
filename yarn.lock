@@ -3237,13 +3237,12 @@
     web3 "1.2.9"
     web3-eth-abi "1.2.9"
 
-"@truffle/hdwallet-provider@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@truffle/hdwallet-provider/-/hdwallet-provider-1.2.1.tgz#164f027f688123b991a3fa64ca3519635b65200b"
-  integrity sha512-EijX9JgcR3IaM1978ysHqJpObZNBgFWyBPzwy7YxMfWUaCp6PyM/g2w/b/DGmMHT56D56KVu+1PtHpEG0sbjtg==
+"@truffle/hdwallet-provider@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@truffle/hdwallet-provider/-/hdwallet-provider-1.2.2.tgz#7b42f7cb7fc1f80751c573c72ba488e59690f8ea"
+  integrity sha512-gpE5M9c+G7uMR9Nn2xslY0BRdl8hvlrHxBJ451g/V3WnOI5rDQMXezz6VZMn3zvWDiQTPRknx1uUDfWvMuQwqg==
   dependencies:
     "@trufflesuite/web3-provider-engine" "15.0.13-1"
-    "@types/web3" "^1.0.20"
     any-promise "^1.3.0"
     bindings "^1.5.0"
     ethereum-cryptography "^0.1.3"
@@ -3766,13 +3765,6 @@
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.3.tgz#9c088679876f374eb5983f150d4787aa6fb32d7e"
   integrity sha512-FvUupuM3rlRsRtCN+fDudtmytGO6iHJuuRKS1Ss0pG5z8oX0diNEw94UEL7hgDbpN94rgaK5R7sWm6RrSkZuAQ==
-
-"@types/web3@^1.0.20":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@types/web3/-/web3-1.2.2.tgz#d95a101547ce625c5ebd0470baa5dbd4b9f3c015"
-  integrity sha512-eFiYJKggNrOl0nsD+9cMh2MLk4zVBfXfGnVeRFbpiZzBE20eet4KLA3fXcjSuHaBn0RnQzwLAGdgzgzdet4C0A==
-  dependencies:
-    web3 "*"
 
 "@types/webpack-sources@*":
   version "2.0.0"
@@ -24229,19 +24221,6 @@ web3-utils@1.3.4, web3-utils@^1.0.0-beta.31, web3-utils@^1.2.1:
     underscore "1.9.1"
     utf8 "3.0.0"
 
-web3@*, web3@^1.0.0-beta.35, web3@^1.2.0, web3@^1.2.1, web3@^1.2.4, web3@^1.3.0, web3@^1.3.4:
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/web3/-/web3-1.3.4.tgz#31e014873360aa5840eb17f9f171190c967cffb7"
-  integrity sha512-D6cMb2EtTMLHgdGbkTPGl/Qi7DAfczR+Lp7iFX3bcu/bsD9V8fZW69hA8v5cRPNGzXUwVQebk3bS17WKR4cD2w==
-  dependencies:
-    web3-bzz "1.3.4"
-    web3-core "1.3.4"
-    web3-eth "1.3.4"
-    web3-eth-personal "1.3.4"
-    web3-net "1.3.4"
-    web3-shh "1.3.4"
-    web3-utils "1.3.4"
-
 web3@1.2.11:
   version "1.2.11"
   resolved "https://registry.yarnpkg.com/web3/-/web3-1.2.11.tgz#50f458b2e8b11aa37302071c170ed61cff332975"
@@ -24281,6 +24260,19 @@ web3@1.2.9:
     web3-net "1.2.9"
     web3-shh "1.2.9"
     web3-utils "1.2.9"
+
+web3@^1.0.0-beta.35, web3@^1.2.0, web3@^1.2.1, web3@^1.2.4, web3@^1.3.0, web3@^1.3.4:
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/web3/-/web3-1.3.4.tgz#31e014873360aa5840eb17f9f171190c967cffb7"
+  integrity sha512-D6cMb2EtTMLHgdGbkTPGl/Qi7DAfczR+Lp7iFX3bcu/bsD9V8fZW69hA8v5cRPNGzXUwVQebk3bS17WKR4cD2w==
+  dependencies:
+    web3-bzz "1.3.4"
+    web3-core "1.3.4"
+    web3-eth "1.3.4"
+    web3-eth-personal "1.3.4"
+    web3-net "1.3.4"
+    web3-shh "1.3.4"
+    web3-utils "1.3.4"
 
 webidl-conversions@^2.0.0:
   version "2.0.1"
