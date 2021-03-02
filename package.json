@@ -44,7 +44,7 @@
     "custom-env": "^2.0.1",
     "embark": "^6.0.0",
     "eth-gas-reporter": "^0.2.21",
-    "ethereum-waffle": "^3.2.2",
+    "ethereum-waffle": "^3.3.0",
     "ethereumjs-util": "^7.0.8",
     "ganache-cli": "^6.12.2",
     "lite-server": "^2.6.1",
