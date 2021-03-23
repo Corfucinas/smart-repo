@@ -38,7 +38,7 @@
     "@drizzle/store": "^1.5.3",
     "@openzeppelin/contracts": "^3.4.1",
     "@studydefi/money-legos": "^2.4.1",
-    "@truffle/hdwallet-provider": "^1.2.3",
+    "@truffle/hdwallet-provider": "^1.2.4",
     "axios": "^0.21.1",
     "base-64": "^1.0.0",
     "custom-env": "^2.0.1",
