@@ -78,7 +78,7 @@
     "react-test-renderer": "^17.0.2",
     "solhint-plugin-prettier": "^0.0.5",
     "solidity-docgen": "^0.5.11",
-    "stylelint": "^13.13.0",
+    "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "webpack": "^5.35.1",
     "webpack-cli": "^4.6.0",
