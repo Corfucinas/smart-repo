@@ -31,7 +31,7 @@
   "author": "Pedro Torres <corfucinas@protonmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@biconomy/mexa": "^2.0.8",
+    "@biconomy/mexa": "^2.0.9",
     "@codechecks/client": "^0.1.10",
     "@drizzle/react-components": "^1.5.3",
     "@drizzle/react-plugin": "^1.5.3",
