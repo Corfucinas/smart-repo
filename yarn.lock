@@ -23075,10 +23075,10 @@ prettier-plugin-solidity@1.0.0-alpha.25:
     solidity-parser-antlr "^0.4.4"
     string-width "^3.0.0"
 
-prettier-plugin-solidity@^1.0.0-beta.13:
-  version "1.0.0-beta.13"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-solidity/-/prettier-plugin-solidity-1.0.0-beta.13.tgz#2e31c5a5e2df3239e5e93704f9bcafe09a5f8190"
-  integrity sha512-AWMDRSabpNQMX7EqdDKgx/UVtQY6e3/Iu4gSPYDGvgiWl+OY8kYhAMll2NZHK/X+F0YYpPHYpebkDh7MGxbB1g==
+prettier-plugin-solidity@^1.0.0-beta.15:
+  version "1.0.0-beta.15"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-solidity/-/prettier-plugin-solidity-1.0.0-beta.15.tgz#ca7388e17e2620dc6251746e405150479abdc0a3"
+  integrity sha512-5+pM/Z1BgQN6xMCe/AfXmiVhoteaVgruVoGT8aa0zJMRiNOiK+SeaW2kOyzTI6sgg3QsUW58+ahf1hxlc/Adbw==
   dependencies:
     "@solidity-parser/parser" "^0.13.2"
     emoji-regex "^9.2.2"
