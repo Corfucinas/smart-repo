@@ -66,23 +66,28 @@
     "web3-provider-engine": "^16.0.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.0",
+    "@babel/core": "^7.14.6",
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
     "@smartdec/smartcheck": "^2.0.1",
-    "husky": "^7.0.1",
+    "chai": "^4.3.4",
+    "ethers": "^5.4.1",
+    "hardhat": "^2.4.3",
+    "husky": "^7.0.0",
     "jest": "^27.0.6",
-    "lint-staged": "^11.1.2",
-    "metro-react-native-babel-preset": "^0.66.2",
+    "lint-staged": "^11.0.0",
+    "metro-react-native-babel-preset": "^0.66.0",
     "pre-commit": "^1.2.2",
     "prettier": "^2.3.2",
-    "prettier-plugin-solidity": "^1.0.0-beta.17",
+    "prettier-plugin-solidity": "^1.0.0-beta.13",
     "react-test-renderer": "^17.0.2",
     "solhint-plugin-prettier": "^0.0.5",
     "solidity-docgen": "^0.5.13",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
-    "webpack": "^5.51.1",
-    "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.0.0"
+    "webpack": "^5.42.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
   },
   "private": true
 }

@@ -89,3 +89,9 @@ https://capturetheether.com/
 https://github.com/shanefontaine/uniswap-python
 
 https://github.com/Uniswap/uniswap-v2-subgraph
+
+https://docs.aave.com/developers/tutorials/performing-a-flash-loan
+
+https://sampriestley.com/opportunities-in-crypto-ep2-flash-loans/
+
+https://github.com/kendricktan/generalized-aave-flashloans

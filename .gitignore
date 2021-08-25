@@ -122,6 +122,7 @@ foward-eth
 /src/project-1
 /src/project-2
 /src/project-3
+/src/project-4
 .env*
 
 #compiled
