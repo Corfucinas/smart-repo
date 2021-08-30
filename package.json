@@ -79,7 +79,7 @@
     "metro-react-native-babel-preset": "^0.66.0",
     "pre-commit": "^1.2.2",
     "prettier": "^2.3.2",
-    "prettier-plugin-solidity": "^1.0.0-beta.13",
+    "prettier-plugin-solidity": "^1.0.0-beta.17",
     "react-test-renderer": "^17.0.2",
     "solhint-plugin-prettier": "^0.0.5",
     "solidity-docgen": "^0.5.13",
