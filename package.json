@@ -85,7 +85,7 @@
     "solidity-docgen": "^0.5.13",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
-    "webpack": "^5.42.1",
+    "webpack": "^5.52.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^4.0.0"
   },
