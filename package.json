@@ -45,7 +45,7 @@
     "embark": "^6.0.0",
     "eth-gas-reporter": "^0.2.22",
     "ethereum-waffle": "^3.4.0",
-    "ethereumjs-util": "^7.1.0",
+    "ethereumjs-util": "^7.1.1",
     "ganache-cli": "^6.12.2",
     "lite-server": "^2.6.1",
     "mocha": "^9.1.1",
