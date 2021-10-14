@@ -82,7 +82,7 @@
     "prettier-plugin-solidity": "^1.0.0-beta.13",
     "react-test-renderer": "^17.0.2",
     "solhint-plugin-prettier": "^0.0.5",
-    "solidity-docgen": "^0.5.14",
+    "solidity-docgen": "^0.5.16",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "webpack": "^5.58.1",
