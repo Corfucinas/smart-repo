@@ -1695,19 +1695,19 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@biconomy/mexa@^2.0.17":
-  version "2.0.17"
-  resolved "https://registry.yarnpkg.com/@biconomy/mexa/-/mexa-2.0.17.tgz#5ec8fcf60fb965ae9b226b0febb5ccaa2fbb2e7c"
-  integrity sha512-MHJGd6ew8CTFHE3U96pS8agPyYfYX5bqUPWtplbWhw3C9kJDFEPakBtFh95c8VxNY9C9WCdNxx/mp1GPZOiRdQ==
+"@biconomy/mexa@^2.0.22":
+  version "2.0.22"
+  resolved "https://registry.yarnpkg.com/@biconomy/mexa/-/mexa-2.0.22.tgz#63283817eb36f65a39527d7f455f67e70b3b8daa"
+  integrity sha512-AwBwN4gbPZT3DJXN/qJSEUgQo9mWIkbuM6iiLPMLlSyBdJD8dZlmbuZM8BNVXF3rY2mHeKSe50aO2r3S6j6VFw==
   dependencies:
     "@babel/core" "^7.12.13"
     "@babel/runtime" "^7.12.13"
     abi-decoder "^2.2.2"
+    cross-fetch "^3.1.4"
     ethereum-tx-decoder "^3.0.0"
     ethereumjs-abi "^0.6.8"
     ethers "^5.0.24"
     events "^3.0.0"
-    node-fetch "^2.6.0"
     promise "^8.0.3"
 
 "@cnakazawa/watch@^1.0.3":
@@ -9922,7 +9922,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-cross-fetch@3.0.6, cross-fetch@^3.0.4:
+cross-fetch@3.0.6:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.0.6.tgz#3a4040bc8941e653e0e9cf17f29ebcd177d3365c"
   integrity sha512-KBPUbqgFjzWlVcURG+Svp9TlhA5uliYtiNx/0r8nv0pdypeQCRJ9IaSIc3q/x3q8t3F75cHuwxVql1HFGHCNJQ==
@@ -9936,6 +9936,13 @@ cross-fetch@^2.1.0, cross-fetch@^2.1.1:
   dependencies:
     node-fetch "2.1.2"
     whatwg-fetch "2.0.4"
+
+cross-fetch@^3.0.4, cross-fetch@^3.1.4:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.4.tgz#9723f3a3a247bf8b89039f3a380a9244e8fa2f39"
+  integrity sha512-1eAtFWdIubi6T4XPy6ei9iUFoKpUkIF971QLN8lIvvvwueI65+Nw5haMNKUwfJxabqlIIDODJKGrQ66gxC0PbQ==
+  dependencies:
+    node-fetch "2.6.1"
 
 cross-spawn@7.0.3, cross-spawn@^7.0.0, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
   version "7.0.3"
