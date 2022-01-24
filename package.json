@@ -86,7 +86,7 @@
     "stylelint": "^14.0.1",
     "stylelint-config-standard": "^23.0.0",
     "webpack": "^5.64.2",
-    "webpack-cli": "^4.9.1",
+    "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.6.0"
   },
   "private": true
