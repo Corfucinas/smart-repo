@@ -62,7 +62,7 @@
     "truffle-plugin-verify": "^0.5.18",
     "typescript": "^4.5.2",
     "vm-browserify": "^1.1.2",
-    "web3": "^1.6.1",
+    "web3": "^1.7.1",
     "web3-provider-engine": "^16.0.3"
   },
   "devDependencies": {
