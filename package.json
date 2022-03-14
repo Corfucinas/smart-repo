@@ -39,7 +39,7 @@
     "@openzeppelin/contracts": "^4.3.3",
     "@studydefi/money-legos": "^2.4.2",
     "@truffle/hdwallet-provider": "^1.7.0",
-    "axios": "^0.21.1",
+    "axios": "^0.26.1",
     "base-64": "^1.0.0",
     "custom-env": "^2.0.1",
     "embark": "^6.0.0",
